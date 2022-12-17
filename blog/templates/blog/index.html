@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_files %}<link rel="stylesheet" href="{% static 'blog/index.css' %}">{% endblock  %}
+{% block title %}My Blog{% endblock %}
+
+{% block content %}
+
+<section id="welcome">
+    <header>
+        <img src="{% static 'blog/images/obito.jpg' %}" alt="Ben - The Author of this Blog">
+        <h2>BENJAMIN'S BLOG</h2>
+    </header>
+    <p>Hi, I'm Bemo and i love to blog about tech and the world!</p>
+</section>
+<section id = "latest-posts">
+    <h2>My Latest Thought</h2>
+    <ul>
+        {% include "blog/includes/post.html" %}
+    </ul>
+</section>
+<section id="about">
+    <h2>What i do</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Architecto sit aut quae non, id, quod molestias nam 
+        libero necessitatibus dicta, itaque distinctio dolorum. 
+        Dolores delectus voluptatem cumque minima tempore eius.
+    </p>
+    <p>
+        This is a dummy text for this project so... Lorem ipsum dolor 
+        sit amet consectetur, adipisicing elit. Harum nulla architecto 
+        ducimus illum sequi molestiae, voluptate temporibus in laborum 
+        magni consequatur fugiat similique iure aspernatur ut dolor fuga 
+        dolores magnam!
+    </p>
+</section>
+{% endblock  %}

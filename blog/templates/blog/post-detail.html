@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'blog/post-detail.css' %}">
+{% endblock  %}
+{% block title %}
+    The Post Title
+{% endblock %}
+
+{% block content %}
+    <section id = "summary">
+        <h2>Post Title</h2>
+        <article>
+            <img src="{%static  "blog/images/dawnbringer_riven.jpg" %}" alt="Post Title">
+            <address>By Theodore</address>
+            <div>
+                Last Updated on <time>July 10th</time>
+            </div>
+        </article>
+    </section>
+    <main>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing 
+            elit. Accusamus atque, quaerat nam modi ut dolorem 
+            praesentium eligendi itaque veniam aperiam tenetur 
+            voluptatum beatae, voluptatem illo saepe reiciendis 
+            tempora molestias similique!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing 
+            elit. Accusamus atque, quaerat nam modi ut dolorem 
+            praesentium eligendi itaque veniam aperiam tenetur 
+            voluptatum beatae, voluptatem illo saepe reiciendis 
+            tempora molestias similique!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing 
+            elit. Accusamus atque, quaerat nam modi ut dolorem 
+            praesentium eligendi itaque veniam aperiam tenetur 
+            voluptatum beatae, voluptatem illo saepe reiciendis 
+            tempora molestias similique!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing 
+            elit. Accusamus atque, quaerat nam modi ut dolorem 
+            praesentium eligendi itaque veniam aperiam tenetur 
+            voluptatum beatae, voluptatem illo saepe reiciendis 
+            tempora molestias similique!
+        </p>
+    </main>
+{% endblock  %}

@@ -1,0 +1,17 @@
+{% load static %}
+{% block css_files %}<link rel="stylesheet" href="{% static 'blog/includes/post.css' %}">{% endblock  %}
+<li>
+    <article class = "post">
+        <a href="{% url 'post-detail-page' 'the-master'%}">
+            <img src="{% static 'blog/images/cosmic_blade_yi.jpg' %}" alt="Moutain Hiking"/>
+            <div class = "post__content">
+                <h3>Mountain Hiking</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                    elit. Magni dolores ipsa quidem cupiditate sit non 
+                    iste, doloremque doloribus et consequatur asperiores 
+                    quas, eius, debitis placeat ex natus. Doloremque, velit quis.
+                </p>
+            </div>
+        </a>
+    </article>
+</li>
